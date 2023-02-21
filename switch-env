@@ -1,0 +1,14 @@
+#!/bin/bash
+
+basepath=`pwd`
+
+env_path=$basepath/.env
+
+env_type_path=$basepath/.env.$1
+
+echo 10 | cat $env_type_path &> $env_path
+
+echo 'Env {$1} Switch Success!'
+
+
+
